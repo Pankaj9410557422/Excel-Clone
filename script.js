@@ -27,6 +27,18 @@ $(document).ready(function(){
         }
         $(".input-cell-container").append(row);
     }
+    $(".align-icon").click(function(){
+        $(".align-icon.active").removeClass("active");
+        $(this).addClass("active");
+    })
+    $(".active-style").click(function(){
+        $(this).toggleClass("active");
+    })
+
+    $(".input-cell").click(function(){
+        $(".input-cell.active").removeClass("active");
+        $(this).addClass("active");
+    })
 })
 
 

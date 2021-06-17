@@ -90,10 +90,18 @@ body{
     /* border:1px solid ; */
     display:flex;
     align-items: center;
+    padding-left:0.7rem;
+    padding-right:0.7rem;
+    background-color: rgb(241, 240, 240);
 }
 .formula-editor{
     height:70%;
     border:1px solid lightgray;
+    background-color: #fff;
+    padding-left:0.7rem;
+    padding-right:0.7rem;
+    display:flex;
+    align-items: center;
 }
 .selected-cell{
     width:120px;
@@ -106,6 +114,7 @@ body{
 }
 .formula-inp{
     width: calc(100vw - 160px);
+
 }
 
 /* sheet bar  */
@@ -159,7 +168,7 @@ body{
     /* border:1px solid ; */
     display:flex;
     flex-wrap:wrap ;
-    overflow: hidden;
+    overflow:hidden;
     
 }
 .select-all{
@@ -209,5 +218,11 @@ body{
     min-height:25px;
     border-right: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
+}
+.input-cell-container:hover{
+    cursor:cell;
+}
+.menu-icon.active{
+   background-color: lightgray; 
 }
 
