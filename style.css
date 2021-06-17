@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    overflow: hidden;
+    font-size: 14;
+}
+
+.container{
+    height:100vh;
+    /* border:1px solid ; */
+    
+}
+.title-bar{
+    height:5vh;
+    /* border:1px solid ; */
+    background-color: rgb(16,124,65);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+/* menu bar  */
+.menu-bar{
+    height:5vh;
+    /* border:1px solid ; */
+    background-color: rgb(16,124,65);
+    display:flex;
+
+}
+.menu-item{
+    padding-left: 10px;
+    padding-right: 10px;;
+    color:white;
+    font-size: 18;
+    display: flex;
+    align-items: center;
+    /* border:1px solid ; */
+}
+.menu-item:hover{
+    background-color: rgb(10, 77, 40);
+    cursor: pointer;
+}
+.menu-item.active{
+    background-color: #fff;
+    color: rgb(16,124,65);
+}
+.menu-item.active:hover{
+    background-color: #fff;
+    cursor:default;
+}
+
+
+
+/* menu icon bar  */
+.menu-icon-bar{
+    height:6vh;
+    /* border:1px solid ; */
+    display:flex;
+    align-items: center;
+    background-color: rgb(241, 240, 240);
+}
+
+.menu-icon{
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.menu-icon:hover{
+    background-color: lightgray;
+    cursor:pointer;
+}
+
+.font-family-selector{
+    height: 50%;
+    font-size: 18px;
+    width:130px;
+}
+
+
+
+
+/* formula bar  */
+.formula-bar{
+    height:5vh;
+    /* border:1px solid ; */
+}
+
+.sheet-bar{
+    height:4vh;
+    /* border:1px solid ; */
+}
+
+/* cell containers */
+.data-container{
+    height: 75vh;
+    /* border:1px solid ; */
+}
