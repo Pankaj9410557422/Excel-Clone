@@ -79,6 +79,7 @@ body{
     height: 50%;
     font-size: 18px;
     width:130px;
+    font-family: "Noto Sans";
 }
 
 
@@ -143,7 +144,7 @@ body{
     transform: scale(1.2);
 }
 .sheet-tab{
-    border-bottom: 3px solid #107c41;
+    
     padding-left :10px;
     padding-right:10px;
     width:80px;
@@ -156,10 +157,15 @@ body{
 }
 .sheet-tab:hover{
     cursor:default;
+    background-color: lightgray;
+}
+.sheet-tab.active{
+    border-bottom: 3px solid #107c41;
 }
 .sheet-tab-container{
     border:1px solid lightgray;
     width: calc(100vw - 110px);
+    display:flex;
 }
 
 /* cell containers */
@@ -187,11 +193,13 @@ body{
     height:30px;
     border:1px solid lightgray;
     display:flex;
+    overflow: hidden;
 }
 .input-cell-container{
     width:calc(100vw - 30px);
     height: calc(75vh - 30px);
     border: 1px solid lightgray;
+    overflow:scroll;
 }
 .col-name{
     min-width:100px;
@@ -200,6 +208,7 @@ body{
     align-items: center;
     border-right:1px solid lightgray ;
     font-weight: bold;
+    
 }
 .row-name{
     min-height:25px;
@@ -218,6 +227,12 @@ body{
     min-height:25px;
     border-right: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
+    outline-color: #107c41;
+    font-size:"14px";
+    font-family:"Noto Sans"
+}
+.input-cell.active{
+    border:2px solid #107c41;
 }
 .input-cell-container:hover{
     cursor:cell;
@@ -225,4 +240,34 @@ body{
 .menu-icon.active{
    background-color: lightgray; 
 }
+.input-cell.top-cell-selected{
+    border-top:none;
+}
+.input-cell.bottom-cell-selected{
+    border-bottom: 1px solid lightgray;
+}
+.input-cell.right-cell-selected{
+    border-right:1px solid lightgray;
+}
+.input-cell.left-cell-selected{
+    border-left:none;
+}
+
+.icon-color-fill{
+    position:relative;
+}
+.icon-color-text{
+    position:relative;
+}
+.color-picker{
+    position: absolute;
+    height: 12px;
+    width: 26px;
+    border: none;
+    top: 29px;
+    left: 30px;
+    padding:0; 
+}
+
+
 
